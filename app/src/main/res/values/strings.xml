@@ -1,0 +1,15 @@
+<resources>
+    <string name="menu_profilim">Profilim</string>
+    <string name="menu_sifarislerim">Sifarişlərim</string>
+    <string name="menu_unvanlarim">Ünvanlarim</string>
+    <string name="menu_promokod">Promokod</string>
+    <string name="menu_bizimleElaqe">Bizimlə əlaqə</string>
+    <string name="menu_haqqimizda">Haqqımızda</string>
+    <string name="toolbar_title">YemekGetir</string>
+    <string name="ana_sehife">Ana səhifə</string>
+    <string name="aksiyalar">Aksiyalar</string>
+    <string name="axtarish">Axtarış</string>
+    <string name="sebet">Səbət</string>
+
+
+</resources>

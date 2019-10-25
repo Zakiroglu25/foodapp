@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB2A33</color>
+    <color name="colorPrimaryDark">#B6263E</color>
+    <color name="colorAccent">#EB2A33</color>
+    <color name="color_nav_ic_default">#680E29</color>
+    <color name="color_nav_ic_selected">#EB2A33</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profilim"
+        android:icon="@drawable/ic_user"
+        android:title="@string/menu_profilim" />
+    <item
+        android:id="@+id/nav_sifarislerim"
+        android:icon="@drawable/ic_sifarislerim"
+        android:title="@string/menu_sifarislerim" />
+    <item
+        android:id="@+id/nav_unvanlarim"
+        android:icon="@drawable/ic_unvanlarim"
+        android:title="@string/menu_unvanlarim" />
+    <item
+        android:id="@+id/nav_promokod"
+        android:icon="@drawable/ic_promokod"
+        android:title="@string/menu_promokod" />
+    <item
+        android:id="@+id/nav_bizimleElaqe"
+        android:icon="@drawable/ic_bizimleelaqe"
+        android:title="@string/menu_bizimleElaqe" />
+    <item
+        android:id="@+id/nhaav_haqqimizda"
+        android:icon="@drawable/ic_haqqimizda"
+        android:title="@string/menu_haqqimizda" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+
+</menu>

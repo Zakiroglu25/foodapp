@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_ana_sehife"
+        android:icon="@drawable/ic_home"
+        android:title="@string/ana_sehife" />
+
+    <item
+        android:id="@+id/navigation_aksiyalar"
+        android:icon="@drawable/ic_nav_actions"
+        android:title="@string/aksiyalar" />
+
+    <item
+        android:id="@+id/navigation_axtarish"
+        android:icon="@drawable/ic_nav_search"
+        android:title="@string/axtarish" />
+
+    <item
+        android:id="@+id/navigation_sebet"
+        android:icon="@drawable/ic_nav_bag"
+        android:title="@string/sebet" />
+
+</menu>

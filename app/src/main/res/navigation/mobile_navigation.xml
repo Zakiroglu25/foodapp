@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_ana_sehife">
+
+    <fragment
+        android:id="@+id/navigation_ana_sehife"
+        android:name="com.aris.yemekgetir.ui.auth.LoginActivities.fragments.anasehife.AnaSehifeFragment"
+        android:label="@string/ana_sehife"
+        tools:layout="@layout/ana_sehife_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_aksiyalar"
+        android:name="com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.AksiyalarFragment"
+        android:label="@string/aksiyalar"
+        tools:layout="@layout/aksiyalar_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_axtarish"
+        android:name="com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.AxtarishFragment"
+        android:label="@string/axtarish"
+        tools:layout="@layout/axtarish_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_sebet"
+        android:name="com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.SebetFragment"
+        android:label="@string/sebet"
+        tools:layout="@layout/sebet_fragment" />
+
+
+</navigation>

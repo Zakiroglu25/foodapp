@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay"
+      >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Cemi : 34.90 AZN "
+        />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#949494"
+          android:textSize="18sp"
+          android:maxLines="1"
+          android:paddingStart="16dp"
+          android:paddingTop="24dp"
+          android:paddingEnd="16dp"
+          android:text="Catdirilma vaxti"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="20-30 deq"
+          android:textColor="#000"
+          android:paddingStart="16dp"
+          android:paddingEnd="16dp"
+          android:textSize="16sp"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:background="#F0F0F0"
+          android:layout_height="1dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#949494"
+          android:textSize="18sp"
+          android:maxLines="1"
+          android:paddingStart="16dp"
+          android:paddingTop="24dp"
+          android:paddingEnd="16dp"
+          android:text="Unvan"
+          />
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cefer cabbarli 23"
+          android:textColor="#000"
+          android:paddingStart="16dp"
+          android:paddingEnd="16dp"
+          android:textSize="16sp"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:background="#F0F0F0"
+          android:layout_height="1dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:weightSum="4"
+          android:paddingStart="16dp"
+          android:paddingTop="24dp"
+          android:paddingEnd="16dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#949494"
+              android:textSize="18sp"
+              android:maxLines="1"
+              android:layout_gravity="center"
+              android:text="Bina"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="20"
+              android:textColor="#000"
+              android:layout_gravity="center"
+              android:textSize="16sp"
+            />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#949494"
+              android:textSize="18sp"
+              android:maxLines="1"
+              android:layout_gravity="center"
+              android:text="Blok"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="2"
+              android:textColor="#000"
+              android:layout_gravity="center"
+              android:textSize="16sp"
+              />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#949494"
+              android:textSize="18sp"
+              android:maxLines="1"
+              android:layout_gravity="center"
+              android:text="Menzil"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="30"
+              android:textColor="#000"
+              android:layout_gravity="center"
+              android:textSize="16sp"
+              />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#949494"
+              android:textSize="18sp"
+              android:maxLines="1"
+              android:layout_gravity="center"
+              android:text="Mertebe"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="3"
+              android:textColor="#000"
+              android:layout_gravity="center"
+              android:textSize="16sp"
+              />
+
+
+        </LinearLayout>
+
+
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:background="#F0F0F0"
+          android:layout_height="1dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#949494"
+          android:textSize="18sp"
+          android:maxLines="1"
+          android:paddingStart="16dp"
+          android:paddingTop="24dp"
+          android:paddingEnd="16dp"
+          android:text="Telefon"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:background="#F0F0F0"
+          android:layout_height="1dp"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#949494"
+          android:textSize="18sp"
+          android:maxLines="1"
+          android:paddingStart="16dp"
+          android:paddingTop="24dp"
+          android:paddingEnd="16dp"
+          android:text="Serh"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:background="#F0F0F0"
+          android:layout_height="1dp"/>
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#949494"
+          android:textSize="18sp"
+          android:maxLines="1"
+          android:paddingStart="16dp"
+          android:paddingTop="24dp"
+          android:paddingEnd="16dp"
+          android:text="Promokod"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:background="#F0F0F0"
+          android:layout_height="1dp"/>
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_marginTop="32dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odeme vasitesi"
+
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/stroke_btn_bg"
+            android:includeFontPadding="false"
+            android:layout_marginTop="4dp"
+            android:text="Bank Karti"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/stroke_btn_bg"
+            android:includeFontPadding="false"
+            android:text="Nagd"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            />
+
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_btn_bg"
+            android:includeFontPadding="false"
+            android:layout_marginTop="16dp"
+            android:text="Odemek"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:layout_editor_absoluteX="145dp"
+            />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+  </ScrollView>
+
+
+
+</LinearLayout>
