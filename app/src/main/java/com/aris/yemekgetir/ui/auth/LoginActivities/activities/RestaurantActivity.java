@@ -11,10 +11,10 @@ import android.view.View;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
 import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.RestaurantAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.BotttomDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;

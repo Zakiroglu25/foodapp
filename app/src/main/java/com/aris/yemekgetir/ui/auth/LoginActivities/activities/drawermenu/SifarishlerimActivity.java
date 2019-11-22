@@ -1,4 +1,4 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu;
 
 
 import androidx.appcompat.app.AppCompatActivity;

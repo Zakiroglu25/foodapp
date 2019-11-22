@@ -1,4 +1,4 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.widget.TextView;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.BaseActivity;
 
 public class PromokodActivity extends BaseActivity {
 

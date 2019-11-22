@@ -10,16 +10,16 @@ import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseRecyclerVH;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.anasehife.rectclerViewHolders.OffersVH;
 
-public class Offer extends BaseRecyclerVH {
+public class OfferRecycler extends BaseRecyclerVH {
     private static int layout = R.layout.axtarish_offer_row;
 
 
-    public Offer(@NonNull View itemView) {
+    public OfferRecycler(@NonNull View itemView) {
         super(itemView);
     }
 
-    public static OffersVH create(ViewGroup parent) {
-        return new OffersVH(view(parent, layout));
+    public static OfferRecycler create(ViewGroup parent) {
+        return new OfferRecycler(view(parent, layout));
     }
 
     public void setImage(int image) {

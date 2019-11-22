@@ -1,4 +1,4 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,25 +8,23 @@ import android.view.View;
 import android.widget.Button;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.MainActivity;
 
-public class Authentication extends AppCompatActivity {
+public class RegisterCode extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.authentication);
+        setContentView(R.layout.activity_register_code);
 
-
-        Button button = findViewById(R.id.authbtndaxilol);
+        Button button = findViewById(R.id.register_code_davamet_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Authentication.this, RegisterNo.class);
+                Intent intent = new Intent(RegisterCode.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-
-
 
     }
 }

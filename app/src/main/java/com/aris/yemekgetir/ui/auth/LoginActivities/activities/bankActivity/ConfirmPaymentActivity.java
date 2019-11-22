@@ -1,4 +1,4 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.bankActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.BaseActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.bankActivity.BankCartActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.bankActivity.NagdOdenis;
 
 public class ConfirmPaymentActivity extends BaseActivity implements View.OnClickListener {
 

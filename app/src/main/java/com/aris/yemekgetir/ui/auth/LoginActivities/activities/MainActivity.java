@@ -1,22 +1,25 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
-import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.BizimleElaqeActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.HaqqimizdaActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.KuryerOl;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.ProfilimActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.PromokodActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishlerimActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.UnvanActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.AksiyalarFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.AxtarishFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
