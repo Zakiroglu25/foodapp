@@ -1,22 +1,49 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 
 import com.aris.yemekgetir.R;
 
-public class ConfirmPaymentActivity extends BaseActivity {
+public class ConfirmPaymentActivity extends BaseActivity implements View.OnClickListener {
 
-  @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_confirm_payment);
+    Button bankKarti, nagd;
 
-    Toolbar myChildToolbar =
-        findViewById(R.id.toolbar);
-    setSupportActionBar(myChildToolbar);
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_confirm_payment);
 
-    myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
-  }
+
+        Button bankKarti = findViewById(R.id.button);
+        Button nagd = findViewById(R.id.button2);
+
+        bankKarti.setOnClickListener(this);
+        nagd.setOnClickListener(this);
+
+
+        Toolbar myChildToolbar =
+                findViewById(R.id.toolbar);
+        setSupportActionBar(myChildToolbar);
+
+        myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button:
+                startActivity(new Intent(this, BankCartActivity.class));
+                break;
+            case R.id.button2:
+                startActivity(new Intent(this, NagdOdenis.class));
+                break;
+        }
+
+    }
 }

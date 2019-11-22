@@ -3,11 +3,16 @@ package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.aris.yemekgetir.R;
 
 public class HaqqimizdaActivity extends AppCompatActivity {
+
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,5 +24,13 @@ public class HaqqimizdaActivity extends AppCompatActivity {
 
         // Get a support ActionBar corresponding to this toolbar
         myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
+        TextView textView = findViewById(R.id.haqqimizda_kuryerol);
+  //      textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(HaqqimizdaActivity.this, SurucuActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

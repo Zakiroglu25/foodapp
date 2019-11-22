@@ -12,7 +12,7 @@ public class Restaurant {
 
 
   public static Restaurant create(){
-    return new Restaurant().setName("Cafe City").setRating(4.5).setSrc(R.drawable.offer_1).setTime("20-30 deq").setMinimum(0);
+    return new Restaurant().setName("Cafe City").setRating(4.9).setSrc(R.drawable.offer_1).setTime("20-30 deq").setMinimum(0);
   }
 
   public String getName() {

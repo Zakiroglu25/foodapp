@@ -5,14 +5,14 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class SebetViewModel extends ViewModel {
-    private MutableLiveData<String> mText;
-
-    public SebetViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
-    }
+//    private MutableLiveData<String> mText;
+//
+//    public SebetViewModel() {
+//        mText = new MutableLiveData<>();
+//        mText.setValue("This is dashboard fragment");
+//    }
+//
+//    public LiveData<String> getText() {
+//        return mText;
+//    }
 }

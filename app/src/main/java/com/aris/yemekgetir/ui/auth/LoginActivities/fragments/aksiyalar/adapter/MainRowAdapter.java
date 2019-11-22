@@ -21,6 +21,6 @@ public class MainRowAdapter extends BaseAdapter<MainVH,Boolean> {
   }
 
   @Override public int getItemCount() {
-    return 10;
+    return 5;
   }
 }

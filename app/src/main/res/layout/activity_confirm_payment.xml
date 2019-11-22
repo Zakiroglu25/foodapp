@@ -39,23 +39,22 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textColor="#949494"
-          android:textSize="18sp"
           android:maxLines="1"
           android:paddingStart="16dp"
           android:paddingTop="24dp"
           android:paddingEnd="16dp"
-          android:text="Catdirilma vaxti"
-          />
+          android:text="Çatdırılma vaxtı"
+          android:textColor="#949494"
+          android:textSize="18sp" />
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="20-30 deq"
-          android:textColor="#000"
           android:paddingStart="16dp"
           android:paddingEnd="16dp"
-          android:textSize="16sp"
-          />
+          android:text="20-30 dəq"
+          android:textColor="#000"
+          android:textSize="16sp" />
 
       <View
           android:layout_width="match_parent"
@@ -78,12 +77,11 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Cefer cabbarli 23"
-          android:textColor="#000"
           android:paddingStart="16dp"
           android:paddingEnd="16dp"
-          android:textSize="16sp"
-          />
+          android:text="Cəfər  Cabbarlı 23"
+          android:textColor="#000"
+          android:textSize="16sp" />
 
       <View
           android:layout_width="match_parent"
@@ -142,14 +140,13 @@
               android:layout_gravity="center"
               android:text="Blok"
               />
+
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="2"
-              android:textColor="#000"
               android:layout_gravity="center"
-              android:textSize="16sp"
-              />
+              android:textColor="#000"
+              android:textSize="16sp" />
 
 
         </LinearLayout>
@@ -164,20 +161,18 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:textColor="#949494"
-              android:textSize="18sp"
-              android:maxLines="1"
               android:layout_gravity="center"
-              android:text="Menzil"
-              />
+              android:maxLines="1"
+              android:text="Mənzil"
+              android:textColor="#949494"
+              android:textSize="18sp" />
+
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="30"
-              android:textColor="#000"
               android:layout_gravity="center"
-              android:textSize="16sp"
-              />
+              android:textColor="#000"
+              android:textSize="16sp" />
 
 
         </LinearLayout>
@@ -192,20 +187,18 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:textColor="#949494"
-              android:textSize="18sp"
-              android:maxLines="1"
               android:layout_gravity="center"
-              android:text="Mertebe"
-              />
+              android:maxLines="1"
+              android:text="Mərtəbə"
+              android:textColor="#949494"
+              android:textSize="18sp" />
+
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="3"
-              android:textColor="#000"
               android:layout_gravity="center"
-              android:textSize="16sp"
-              />
+              android:textColor="#000"
+              android:textSize="16sp" />
 
 
         </LinearLayout>
@@ -240,14 +233,13 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textColor="#949494"
-          android:textSize="18sp"
           android:maxLines="1"
           android:paddingStart="16dp"
           android:paddingTop="24dp"
           android:paddingEnd="16dp"
-          android:text="Serh"
-          />
+          android:text="Şərh"
+          android:textColor="#949494"
+          android:textSize="18sp" />
 
       <View
           android:layout_width="match_parent"
@@ -280,32 +272,33 @@
           android:layout_marginStart="16dp"
           android:layout_marginEnd="16dp"
           android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Odeme vasitesi"
+            android:text="Ödəmə vasitəsi"
 
             android:textColor="#000"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
+
         <Button
             android:id="@+id/button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:background="@drawable/stroke_btn_bg"
-            android:includeFontPadding="false"
             android:layout_marginTop="4dp"
-            android:text="Bank Karti"
-            android:textSize="18sp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bank_karti_btn"
+            android:includeFontPadding="false"
+            android:text="Bank Kartı"
             android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/button2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
             android:id="@+id/button2"
@@ -313,33 +306,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/stroke_btn_bg"
+            android:background="@drawable/bank_kart_nagd_btn"
             android:includeFontPadding="false"
-            android:text="Nagd"
-            android:textSize="18sp"
+            android:text="Nağd"
             android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-
-        <Button
-            android:id="@+id/pay"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/send_btn_bg"
-            android:includeFontPadding="false"
-            android:layout_marginTop="16dp"
-            android:text="Odemek"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
-            tools:layout_editor_absoluteX="145dp"
-            />
 
       </androidx.constraintlayout.widget.ConstraintLayout>
 

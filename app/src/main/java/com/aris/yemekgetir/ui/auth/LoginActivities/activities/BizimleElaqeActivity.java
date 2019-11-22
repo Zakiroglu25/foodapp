@@ -13,6 +13,7 @@ public class BizimleElaqeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bizimle_elaqe);
+
         Toolbar myChildToolbar =
                 findViewById(R.id.toolbar);
         setSupportActionBar(myChildToolbar);

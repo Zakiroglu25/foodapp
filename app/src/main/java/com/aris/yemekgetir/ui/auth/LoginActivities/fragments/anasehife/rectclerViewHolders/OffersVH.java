@@ -11,18 +11,18 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseRecyclerVH;
 
 public class OffersVH extends BaseRecyclerVH {
 
-  private static int layout = R.layout.anasehife_offer_row;
+    private static int layout = R.layout.anasehife_offer_row;
 
 
-  public OffersVH(@NonNull View itemView) {
-    super(itemView);
-  }
+    public OffersVH(@NonNull View itemView) {
+        super(itemView);
+    }
 
-  public static OffersVH  create(ViewGroup parent){
-    return  new OffersVH(view(parent,layout));
-  }
+    public static OffersVH create(ViewGroup parent) {
+        return new OffersVH(view(parent, layout));
+    }
 
-  public void setImage(int image){
-    ((ImageView)itemView.findViewById(R.id.imageView)).setImageResource(image);
-  }
+    public void setImage(int image) {
+        ((ImageView) itemView.findViewById(R.id.imageView44)).setImageResource(image);
+    }
 }

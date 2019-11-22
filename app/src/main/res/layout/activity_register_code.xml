@@ -4,95 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register_bck"
+    android:background="@drawable/daxilol"
     tools:context=".ui.auth.LoginActivities.activities.RegisterCode">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="320dp"
-        android:layout_height="348dp"
-        android:background="@drawable/register_num_bck"
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Şifrə"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:layout_marginBottom="28dp"
+        android:text="4 rəqəmli kodu daxil edin"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="İləri"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="@drawable/btn_regster"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/register_code_davamet_btn"
+        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+    <Button
+        android:id="@+id/register_code_davamet_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_dialog_xeyr"
+        android:text="Geri"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-        <Button
-            android:id="@+id/register_code_davamet_btn"
-            android:layout_width="112dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/btn_regster"
-            android:text="Davam et"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.911"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.906" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/btn_set_auth"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/register_code_davamet_btn"
+        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/register_code_geri_btn"
-            android:layout_width="112dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/register_code_geri"
-            android:text="Geri"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.088"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.906" />
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/btn_set_auth"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/editText7"
+        app:layout_constraintStart_toEndOf="@+id/editText2" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="263dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="68dp"
-            android:text="4 rəqəmli kodu almadınızsa
-                             yenidən cəhd edin"
-            android:textAlignment="center"
-            android:textColor="#404040"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/register_davamet_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.227" />
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/btn_set_auth"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintStart_toEndOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="262dp"
-            android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/phone_bck" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="151dp"
-            android:layout_height="44dp"
-            android:background="@null"
-            android:ems="10"
-            android:hint="4 rəqəmli code"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.497" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/btn_set_auth"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText7"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

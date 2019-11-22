@@ -9,7 +9,7 @@
     >
 
   <ImageView
-      android:id="@+id/imageView"
+      android:id="@+id/imageView44"
       android:layout_width="240dp"
       android:layout_height="0dp"
 

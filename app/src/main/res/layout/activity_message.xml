@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/register_bck"
     tools:context=".ui.auth.LoginActivities.activities.MessageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+<!-- comment row-->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="0dp"

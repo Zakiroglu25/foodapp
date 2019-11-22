@@ -34,10 +34,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="14 AZN"
+        android:text="14.00 AZN"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        />
+        android:textSize="18sp" />
 
   </LinearLayout>
 
@@ -45,7 +44,7 @@
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Yumurta,pendir,bal,yag,tost çörək"
+      android:text="Yumurta,pendir,bal,yag,pomidor,tost çörək"
       android:textSize="18sp" />
 
   <androidx.constraintlayout.widget.ConstraintLayout

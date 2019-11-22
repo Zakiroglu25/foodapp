@@ -11,7 +11,6 @@ import com.aris.yemekgetir.R;
 
 public class Authentication extends AppCompatActivity {
 
-    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

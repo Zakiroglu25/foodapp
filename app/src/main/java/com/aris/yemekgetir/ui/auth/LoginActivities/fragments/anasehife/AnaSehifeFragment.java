@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
@@ -18,6 +17,7 @@ import android.view.ViewGroup;
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.RestaurantActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.anasehife.adapter.AnaSehifeAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.RecyclerSpaceDec;
 import com.aris.yemekgetir.ui.auth.LoginActivities.models.Restaurant;
@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AnaSehifeFragment extends Fragment {
+public class AnaSehifeFragment extends BaseFragment{
 
     private AnaSehifeViewModel anaSehifeViewModel;
     private RecyclerView recyclerView;
@@ -49,7 +49,7 @@ public class AnaSehifeFragment extends Fragment {
 
         objectList.add(AnaSehifeAdapter.ViewType.SEARCH);
         objectList.add(AnaSehifeAdapter.ViewType.CATEGORY);
-        objectList.add("Əla teklif");
+        objectList.add("Əla təklif");
         objectList.add(AnaSehifeAdapter.ViewType.ACTIONS);
         objectList.add("Bütün Restoranlar");
         objectList.addAll(Arrays.asList(

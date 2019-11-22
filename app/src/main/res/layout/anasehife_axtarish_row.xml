@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         >
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView44"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_marginBottom="8dp"
@@ -43,7 +43,7 @@
             android:includeFontPadding="false"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintStart_toEndOf="@id/imageView44"
             app:layout_constraintTop_toTopOf="parent"
             />
 

@@ -10,9 +10,17 @@
         android:icon="@drawable/ic_sifarislerim"
         android:title="@string/menu_sifarislerim" />
     <item
+        android:id="@+id/nav_bildirisler"
+        android:icon="@drawable/ic_mehtuf"
+        android:title="@string/menu_bildirisler" />
+    <item
+        android:id="@+id/nav_planlashdir"
+        android:icon="@drawable/clock_sifarisi_planlasdir"
+        android:title="@string/menu_sifarishiplanlasdir" />
+    <item
         android:id="@+id/nav_unvanlarim"
         android:icon="@drawable/ic_unvanlarim"
-        android:title="@string/menu_unvanlarim" />
+        android:title= "@string/menu_unvanlarim" />
     <item
         android:id="@+id/nav_promokod"
         android:icon="@drawable/ic_promokod"
@@ -21,6 +29,10 @@
         android:id="@+id/nav_bizimleElaqe"
         android:icon="@drawable/ic_bizimleelaqe"
         android:title="@string/menu_bizimleElaqe" />
+    <item
+        android:id="@+id/nav_kuryerol"
+        android:icon="@drawable/moto"
+        android:title="@string/menu_kuryerol" />
     <item
         android:id="@+id/nhaav_haqqimizda"
         android:icon="@drawable/ic_haqqimizda"

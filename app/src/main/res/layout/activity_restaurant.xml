@@ -1,9 +1,18 @@
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/float_icon"
+        app:backgroundTint="#ED2E37" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/ioexample.appbar"
@@ -18,33 +27,25 @@
             android:weightSum="1"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-
-
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView44"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/restaurant_1"
                 app:layout_constraintDimensionRatio="375:181"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
-
-
-
-
-
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
                 android:id="@+id/restourant_details"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/restaurant_header_bg"
-                app:layout_constraintBottom_toBottomOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="@id/imageView44"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageView">
+                app:layout_constraintTop_toBottomOf="@id/imageView44">
 
 
                 <TextView
@@ -57,21 +58,20 @@
                     android:textColor="#000000"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/restourant_categories"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_marginStart="8dp"
                     android:includeFontPadding="false"
+                    android:text="Sushi , Burger"
                     android:textColor="#6A6A6A"
+                    app:autoSizeTextType="uniform"
                     app:layout_constraintBottom_toBottomOf="@id/rating_lay"
                     app:layout_constraintStart_toEndOf="@id/rating_lay"
-                    app:layout_constraintTop_toTopOf="@id/rating_lay"
-                    app:autoSizeTextType="uniform"
-                    android:text="Sushi , Burger"
-                    />
+                    app:layout_constraintTop_toTopOf="@id/rating_lay" />
 
                 <TextView
                     android:id="@+id/restourant_min_price"
@@ -83,34 +83,32 @@
                     android:textSize="13sp"
                     app:layout_constraintBottom_toBottomOf="@+id/restourant_categories"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/restourant_categories"
-                    />
+                    app:layout_constraintTop_toTopOf="@+id/restourant_categories" />
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/rating_lay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
 
                     android:background="@drawable/rating_bg"
                     app:layout_constraintBottom_toBottomOf="parent"
 
                     app:layout_constraintStart_toStartOf="@id/restourant_tv"
-                    app:layout_constraintTop_toBottomOf="@+id/restourant_tv"
-                    >
+                    app:layout_constraintTop_toBottomOf="@+id/restourant_tv">
+
                     <ImageView
                         android:id="@+id/rating_iv"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:paddingBottom="3dp"
                         android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
                         android:src="@drawable/ic_star"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/rating_tv"
@@ -119,23 +117,18 @@
                         android:includeFontPadding="false"
                         android:padding="1dp"
                         android:text="5.0"
+                        app:autoSizeTextType="uniform"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.407"
                         app:layout_constraintStart_toEndOf="@+id/rating_iv"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:autoSizeTextType="uniform"
-                        tools:layout_editor_absoluteY="0dp"
-                        />
+                        tools:layout_editor_absoluteY="0dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 
             <TextView
@@ -145,15 +138,15 @@
                 android:layout_marginEnd="12dp"
                 android:background="@drawable/time_bg"
                 android:includeFontPadding="false"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:paddingStart="6dp"
+                android:paddingTop="5dp"
                 android:paddingEnd="6dp"
+                android:paddingBottom="5dp"
                 android:text="20-30 deq"
                 android:textColor="#fff"
                 android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/restourant_details"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/restourant_details"
                 tools:layout_editor_absoluteY="0dp"
 
@@ -163,15 +156,14 @@
                 android:id="@+id/back_iv"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:padding="4dp"
-                android:onClick="restClicks"
-                android:src="@drawable/ic_arrow_back_black_24dp"
-                android:background="@drawable/back_bg"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                />
+                android:background="@drawable/back_bg"
+                android:onClick="restClicks"
+                android:padding="4dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -179,25 +171,26 @@
             android:id="@+id/tabs_match_screen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabTextColor="#000"
+            android:background="#F9F9F9"
+            app:tabIndicatorHeight="0dp"
             app:tabMode="scrollable"
             app:tabTextAppearance="@style/CustomTabLayout"
-            app:tabIndicatorHeight="0dp"
-            android:background="#F9F9F9" >
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:text="Qelyanaltilar"
-                android:layout_height="wrap_content"/>
+            app:tabTextColor="#000">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
-                android:text="Nahar"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Qelyanaltilar" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
-                android:text="Esas Yemekler"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Nahar" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esas Yemekler" />
 
         </com.google.android.material.tabs.TabLayout>
     </com.google.android.material.appbar.AppBarLayout>

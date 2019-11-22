@@ -85,14 +85,14 @@
             app:layout_constraintVertical_bias="0.928" />
 
         <View
-            android:id="@+id/view7"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="60dp"
-            android:background="#F0F0F0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="#F0F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toTopOf="@+id/appBarLayout2">
 
         <TextView
-            android:id="@+id/profil_txt_email"
+            android:id="@+id/haqqimizda_kuryerol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"

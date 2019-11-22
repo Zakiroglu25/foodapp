@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
+//import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.adapter.MainAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.adapter.MainAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.RecyclerSpaceDec;
 

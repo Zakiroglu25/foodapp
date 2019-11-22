@@ -9,7 +9,7 @@ public class AnaSehifeViewModel extends ViewModel {
 
     public AnaSehifeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is AnaShife fragment");
     }
 
     public LiveData<String> getText() {

@@ -1,42 +1,50 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.AksiyalarFragment;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.AxtarishFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     DrawerLayout drawer;
     BottomNavigationView bottomNavView;
     NavigationView navView;
+
+    private AksiyalarFragment aksiyalarFragment;
+    private AxtarishFragment axtarishFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initViews();
+
     }
+
     private void initViews() {
         drawer = findViewById(R.id.drawer_layout);
+        bottomNavView = findViewById(R.id.bottom_nav_view);
         navView = findViewById(R.id.nav_view_drawer);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-    //    NavigationUI.setupWithNavController(bottomNavView, navController);
-
+        NavigationUI.setupWithNavController(bottomNavView, navController);
         navView.setNavigationItemSelectedListener(navigationItemSelectedListener());
     }
     private NavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener() {
@@ -60,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.nav_promokod:
                     startActivity(new Intent(this, PromokodActivity.class));
+                    break;
+                    case R.id.nav_kuryerol:
+                    startActivity(new Intent(this, KuryerOl.class));
                     break;
                 default:
                     Toast.makeText(this, menuItem.getTitle(), Toast.LENGTH_SHORT).show();

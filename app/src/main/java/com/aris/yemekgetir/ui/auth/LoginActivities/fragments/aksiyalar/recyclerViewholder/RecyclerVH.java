@@ -27,7 +27,7 @@ public class RecyclerVH extends BaseRecyclerVH {
     recyclerView = itemView.findViewById(R.id.item_recycler);
 
     LinearLayoutManager mLayoutManager = new LinearLayoutManager(itemView.getContext());
-    mLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+    mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
     recyclerView.setLayoutManager(mLayoutManager);
     recyclerView.setItemAnimator(new DefaultItemAnimator());
 

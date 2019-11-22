@@ -3,14 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.aris.yemekgetir">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.auth.LoginActivities.activities.SebetActivity"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.KuryerOl"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.AddMenuRestaurant" />
+        <activity android:name=".ui.auth.LoginActivities.activities.BankCartActivity" />
+        <activity android:name=".ui.auth.LoginActivities.activities.NagdOdenis" />
+        <activity android:name=".ui.auth.LoginActivities.activities.SebetActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.MessageActivity" />
+        <activity android:name=".ui.auth.LoginActivities.activities.ConfirmPaymentActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.RestaurantActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.MainActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.HaqqimizdaActivity" />

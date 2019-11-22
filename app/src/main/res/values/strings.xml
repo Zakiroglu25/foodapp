@@ -1,15 +1,26 @@
 <resources>
     <string name="menu_profilim">Profilim</string>
-    <string name="menu_sifarislerim">Sifarişlərim</string>
+    <string name="menu_sifarislerim">Əvvəlki sifarişlərim</string>
+    <string name="menu_sifarishiplanlasdir">Sifarişi planlaşdır</string>
+    <string name="menu_bildirisler">Bildirişlər</string>
+    <string name="menu_planlasdir">Sifarişi planlaşdır</string>
     <string name="menu_unvanlarim">Ünvanlarim</string>
     <string name="menu_promokod">Promokod</string>
     <string name="menu_bizimleElaqe">Bizimlə əlaqə</string>
+    <string name="menu_kuryerol">Kuryer ol</string>
+
     <string name="menu_haqqimizda">Haqqımızda</string>
     <string name="toolbar_title">YemekGetir</string>
     <string name="ana_sehife">Ana səhifə</string>
     <string name="aksiyalar">Aksiyalar</string>
     <string name="axtarish">Axtarış</string>
     <string name="sebet">Səbət</string>
+    <string name="odenis">ÖDƏNİŞ</string>
 
+    //swipe button recyclerView
+    <string name="app_name">Recycler Swipe</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_cart">My Cart</string>
+    <string name="delete">DELETE</string>
 
 </resources>

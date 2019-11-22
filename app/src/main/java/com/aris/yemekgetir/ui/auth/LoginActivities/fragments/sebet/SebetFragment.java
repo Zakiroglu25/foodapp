@@ -15,26 +15,26 @@ import android.view.ViewGroup;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.ConfirmPaymentActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseFragment;
 
-public class SebetFragment extends Fragment {
+public class SebetFragment extends BaseFragment {
 
-    private SebetViewModel mViewModel;
 
-    public static SebetFragment newInstance() {
-        return new SebetFragment();
-    }
-
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.sebet_fragment, container, false);
-    }
-
-    @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-
-        view.findViewById(R.id.send_btn)
-                .setOnClickListener(
-                        view1 -> startActivity(new Intent(getContext(), ConfirmPaymentActivity.class)));
-    }
-
+//    public View onCreateView(
+//            @NonNull LayoutInflater inflater,
+//            ViewGroup container,
+//            Bundle savedInstanceState
+//    ) {
+//
+//        return inflater.inflate(R.layout.sebet_fragment, container, false);
+//    }
+//
+////    @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+////
+////        view.findViewById(R.id.send_btn)
+////                .setOnClickListener(
+////                        view1 -> startActivity(new Intent(getContext(), ConfirmPaymentActivity.class)));
+////    }
+//}
+//
 }
