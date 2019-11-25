@@ -1,4 +1,4 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities.bankActivity;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.orderStatusAndRaiting;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,20 +8,19 @@ import android.view.View;
 import android.widget.Button;
 
 import com.aris.yemekgetir.R;
-import com.aris.yemekgetir.ui.auth.LoginActivities.activities.orderStatusAndRaiting.OrderStatus;
 
-public class NagdOdenis extends AppCompatActivity {
+public class Kuryere_qiymet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nagd_odenis);
+        setContentView(R.layout.activity_kuryere_qiymet);
+        Button button= findViewById(R.id.btn_reytinq_ver);
 
-        Button button = findViewById(R.id.send_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NagdOdenis.this, OrderStatus.class);
+                Intent intent = new Intent(Kuryere_qiymet.this, RaitingVerTwo.class);
                 startActivity(intent);
             }
         });

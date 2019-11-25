@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.auth.LoginActivities.activities.orderStatus.OrderStatus"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.Thanks"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.Kuryere_qiymet" />
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.RaitingVerTwo" />
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.RaitingVer" />
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.OrderStatus" />
         <activity android:name=".ui.auth.LoginActivities.activities.SearchResult" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.KuryerOl" />
         <activity android:name=".ui.auth.LoginActivities.activities.AddMenuRestaurant" />

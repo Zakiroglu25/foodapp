@@ -1,14 +1,18 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities.orderStatus;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.orderStatusAndRaiting;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
 import com.yandex.mapkit.Animation;
 import com.yandex.mapkit.MapKitFactory;
 import com.yandex.mapkit.geometry.Point;
@@ -18,6 +22,7 @@ import com.yandex.mapkit.mapview.MapView;
 public class OrderStatus extends AppCompatActivity {
 
     private MapView mapview;
+    TextView textView;
 
     // Specify the name of the activity in place of map.    setContentView (R. layout.map);
     //
@@ -25,6 +30,7 @@ public class OrderStatus extends AppCompatActivity {
     private final Point TARGET_LOCATION = new Point(59.945933, 30.320045);
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         MapKitFactory.setApiKey(MAPKIT_API_KEY);
@@ -32,6 +38,18 @@ public class OrderStatus extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_order_status);
+
+
+        TextView textView = findViewById(R.id.on_deqiqe_qalib);
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OrderStatus.this, RaitingVer.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         mapview = findViewById(R.id.mapview);
