@@ -16,7 +16,7 @@ public class RaitingVer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raiting_ver);
 
-        Button button= findViewById(R.id.kuryere_qiymet_ver_two_reytin);
+        Button button= findViewById(R.id.reyting_ver);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

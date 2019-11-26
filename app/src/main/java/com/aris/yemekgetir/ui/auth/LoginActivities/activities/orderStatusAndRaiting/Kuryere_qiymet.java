@@ -15,12 +15,12 @@ public class Kuryere_qiymet extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuryere_qiymet);
-        Button button= findViewById(R.id.btn_reytinq_ver);
+        Button button= findViewById(R.id.btn_reytinq_veriki);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Kuryere_qiymet.this, RaitingVerTwo.class);
+                Intent intent = new Intent(Kuryere_qiymet.this, Thanks.class);
                 startActivity(intent);
             }
         });

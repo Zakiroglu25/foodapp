@@ -87,16 +87,16 @@ public class MainActivity extends BaseActivity {
             case R.id.toolbar_menu_iv:
                 drawer.openDrawer(GravityCompat.START);
                 break;
-            case R.id.toolbar_message_iv:
-                ImageView imageView = findViewById(R.id.toolbar_message_iv);
-                imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this,MessageActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                break;
+//            case R.id.toolbar_message_iv:
+//                ImageView imageView = findViewById(R.id.toolbar_message_iv);
+//                imageView.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent intent = new Intent(MainActivity.this,MessageActivity.class);
+//                        startActivity(intent);
+//                    }
+//                });
+//                break;
         }
     }
 }

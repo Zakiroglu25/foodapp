@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/add_menu_bck"
 
-    tools:context=".activities.ui.kuryerOl.KuryerOl">
+    tools:context=".ui.auth.LoginActivities.activities.drawermenu.KuryerOl">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout2"

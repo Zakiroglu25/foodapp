@@ -160,7 +160,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/btn_reytinq_ver"
+            android:id="@+id/reyting_ver"
             android:layout_width="199dp"
             android:layout_height="53dp"
             android:layout_marginBottom="50dp"

@@ -29,7 +29,7 @@ public class SebetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sebet);
 
         final RecyclerView recyclerView = findViewById(R.id.recycler_view);
-       // recyclerView.setAdapter(new SebetAdapter(getItems()));
+        recyclerView.setAdapter(new SebetAdapter(getItems()));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 

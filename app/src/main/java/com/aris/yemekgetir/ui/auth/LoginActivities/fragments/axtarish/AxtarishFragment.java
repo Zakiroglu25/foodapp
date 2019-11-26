@@ -10,10 +10,15 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
@@ -42,6 +47,33 @@ public class AxtarishFragment extends BaseFragment {
         View root = inflater.inflate(R.layout.axtarish_fragment, container, false);
 
 
+//        EditText editText = (EditText)root.findViewById(R.id.edittextaxtarish);
+//        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+//            @Override
+//            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+//                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+//                    performSearch();
+//                    return true;
+//                }
+//                return false;
+//            }
+//        });
+//        final EditText edittext = root.findViewById(R.id.edittextaxtarish);
+//        edittext.setOnKeyListener(new
+//                                          View.OnKeyListener() {
+//
+//           public boolean onKey(View v, int keyCode, KeyEvent event) {
+//               // If the event is a key-down event on the "enter" button
+//               if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+//                       (keyCode == KeyEvent.KEYCODE_ENTER)) {
+//                   // Perform action on key press
+//                   return true;
+//               }
+//               return false;
+//           }
+//       });
+
+
 //        // TODO: 11/22/2019  intent fragment to activity image view
 //        imageView.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -54,11 +86,8 @@ public class AxtarishFragment extends BaseFragment {
     }
 
 
-
-
-
-
-    @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         recyclerView = view.findViewById(R.id.axtarish_lv);
 
         Utils.loadDefaultRecyclerConfg(recyclerView, getContext());
@@ -76,11 +105,11 @@ public class AxtarishFragment extends BaseFragment {
 
         ));
 
-        AxtarishAdapter axtarishAdapter= new AxtarishAdapter();
+        AxtarishAdapter axtarishAdapter = new AxtarishAdapter();
 
         axtarishAdapter.setOnRecyclerItemClick(o -> {
             Log.e(TAG, "onViewCreated: ");
-            if (o instanceof Search){
+            if (o instanceof Search) {
                 startActivity(new Intent(getContext(), SearchResult.class));
             }
 

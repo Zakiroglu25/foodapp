@@ -2,9 +2,13 @@ package com.aris.yemekgetir.ui.auth.LoginActivities.activities.orderStatusAndRai
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.MainActivity;
 
 public class Thanks extends AppCompatActivity {
 
@@ -12,5 +16,18 @@ public class Thanks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thanks);
+
+
+        Button button= findViewById(R.id.restorana_kec_thanks);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Thanks.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }
