@@ -1,15 +1,20 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aris.yemekgetir.R;
@@ -18,6 +23,7 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.Haqqimi
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.KuryerOl;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.ProfilimActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.PromokodActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishleriPlanlashdir;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishlerimActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.UnvanActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.AksiyalarFragment;
@@ -50,6 +56,7 @@ public class MainActivity extends BaseActivity {
         NavigationUI.setupWithNavController(bottomNavView, navController);
         navView.setNavigationItemSelectedListener(navigationItemSelectedListener());
     }
+
     private NavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener() {
         return menuItem -> {
 
@@ -72,8 +79,14 @@ public class MainActivity extends BaseActivity {
                 case R.id.nav_promokod:
                     startActivity(new Intent(this, PromokodActivity.class));
                     break;
-                    case R.id.nav_kuryerol:
+                case R.id.nav_kuryerol:
                     startActivity(new Intent(this, KuryerOl.class));
+                    break;
+                case R.id.nav_bildirisler:
+                    startActivity(new Intent(this, MessageActivity.class));
+
+                    break;case R.id.nav_planlashdir:
+                    startActivity(new Intent(this, SifarishleriPlanlashdir.class));
                     break;
                 default:
                     Toast.makeText(this, menuItem.getTitle(), Toast.LENGTH_SHORT).show();
@@ -82,6 +95,7 @@ public class MainActivity extends BaseActivity {
             return true;
         };
     }
+
     public void toolbarClick(View view) {
         switch (view.getId()) {
             case R.id.toolbar_menu_iv:
@@ -99,4 +113,57 @@ public class MainActivity extends BaseActivity {
 //                break;
         }
     }
-}
+        public TextView txtView;
+
+       private void itil(){
+            // Button1
+            final Button btn1 = (Button) findViewById(R.id.btn_odemek_raiting);
+            btn1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    ShowDialog();
+                }
+            });
+
+        }
+
+        public void ShowDialog()
+        {
+            final AlertDialog.Builder popDialog = new AlertDialog.Builder(this);
+            final RatingBar rating = new RatingBar(this);
+            rating.setMax(6);
+
+            popDialog.setIcon(android.R.drawable.btn_star_big_on);
+            popDialog.setTitle("Vote!! ");
+            popDialog.setView(rating);
+
+            // Button OK
+            popDialog.setPositiveButton(android.R.string.ok,
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            txtView.setText(String.valueOf(rating.getProgress()));
+                            dialog.dismiss();
+                        }
+
+                    })
+
+                    // Button Cancel
+                    .setNegativeButton("Cancel",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+
+            popDialog.create();
+            popDialog.show();
+
+        }
+
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+           // getMenuInflater().inflate(R.menu.activity_main, menu);
+            return true;
+        }
+
+    }
+

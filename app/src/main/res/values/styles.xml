@@ -14,6 +14,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.Light" parent="AppTheme">
+    <item name="colorPrimaryDark">#2B0D42</item>
+    </style>
 
     <style name="CustomTabLayout" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">false</item>

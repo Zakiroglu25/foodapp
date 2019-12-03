@@ -40,6 +40,8 @@ public class AxtarishFragment extends BaseFragment {
     private RecyclerView recyclerView;
     ImageView imageView;
 
+    EditText edittextaxtarish;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         axtarishViewModel =
@@ -47,39 +49,28 @@ public class AxtarishFragment extends BaseFragment {
         View root = inflater.inflate(R.layout.axtarish_fragment, container, false);
 
 
-//        EditText editText = (EditText)root.findViewById(R.id.edittextaxtarish);
-//        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+//        edittextaxtarish = root.findViewById(R.id.edittextaxtarish);
+//
+//        edittextaxtarish.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 //            @Override
 //            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 //                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-//                    performSearch();
+//                    System.out.println("Fuck you");
 //                    return true;
 //                }
 //                return false;
 //            }
 //        });
-//        final EditText edittext = root.findViewById(R.id.edittextaxtarish);
-//        edittext.setOnKeyListener(new
-//                                          View.OnKeyListener() {
 //
-//           public boolean onKey(View v, int keyCode, KeyEvent event) {
-//               // If the event is a key-down event on the "enter" button
-//               if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-//                       (keyCode == KeyEvent.KEYCODE_ENTER)) {
-//                   // Perform action on key press
-//                   return true;
-//               }
-//               return false;
-//           }
-//       });
-
-
-//        // TODO: 11/22/2019  intent fragment to activity image view
-//        imageView.setOnClickListener(new View.OnClickListener() {
+//        edittextaxtarish.setOnEditorActionListener(new EditText.OnEditorActionListener() {
 //            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(root.getContext(), SearchResult.class);
-//                startActivity(intent);
+//            public boolean onEditorAction(EditText v, int actionId, KeyEvent event) {
+//                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+//                    Log.i(TAG, "onEditorAction: Adam kisi olar");
+//                    return true;
+//                }
+//                return false;
 //            }
 //        });
         return root;

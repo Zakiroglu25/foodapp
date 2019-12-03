@@ -2,6 +2,7 @@ package com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,12 @@ public class SifarishlerimActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sifarishlerim);
+
+        Toolbar myChildToolbar =
+                findViewById(R.id.toolbar);
+        setSupportActionBar(myChildToolbar);
+        myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
+
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
         expandableListDetail = ExpanleListData.getData();
         expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());

@@ -10,18 +10,17 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.aris.yemekgetir.R;
-import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
 import com.yandex.mapkit.Animation;
 import com.yandex.mapkit.MapKitFactory;
 import com.yandex.mapkit.geometry.Point;
 import com.yandex.mapkit.map.CameraPosition;
 import com.yandex.mapkit.mapview.MapView;
 
-public class OrderStatus extends AppCompatActivity {
-
+public class MapStatus extends AppCompatActivity {
     private MapView mapview;
     TextView textView;
 
@@ -38,27 +37,20 @@ public class OrderStatus extends AppCompatActivity {
         MapKitFactory.initialize(this);
 
         Log.e(TAG, "onCreate: " );
-        setContentView(R.layout.activity_order_status);
+        setContentView(R.layout.activity_map_status);
 
 
-        TextView textView = findViewById(R.id.on_deqiqe_qalib);
 
-        textView.setOnClickListener(new View.OnClickListener() {
+        Button button= findViewById(R.id.sifarish_status);
+
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OrderStatus.this, RaitingVer.class);
+                Intent intent = new Intent(MapStatus.this, OrderStatus.class);
                 startActivity(intent);
             }
         });
-        TextView textView1 = findViewById(R.id.chatdirilma_order);
 
-        textView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OrderStatus.this, MapStatus.class);
-                startActivity(intent);
-            }
-        });
 
 
 
@@ -69,12 +61,12 @@ public class OrderStatus extends AppCompatActivity {
                 new Animation(Animation.Type.SMOOTH, 0),
                 null);
 
-        Toolbar myChildToolbar =
-                findViewById(R.id.toolbar);
-        setSupportActionBar(myChildToolbar);
+//        Toolbar myChildToolbar =
+//                findViewById(R.id.toolbar);
+//        setSupportActionBar(myChildToolbar);
 
 
-        myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
+    //    myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
 
         // Get a support ActionBar corresponding to this toolbar
         ActionBar ab = getSupportActionBar();

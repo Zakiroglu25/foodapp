@@ -74,7 +74,6 @@ public class AnaSehifeFragment extends BaseFragment{
 
         });
 
-
         recyclerView.addItemDecoration(new RecyclerSpaceDec(16));
 
         recyclerView.setAdapter(anaSehifeAdapter);

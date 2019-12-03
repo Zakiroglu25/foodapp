@@ -21,18 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         >
+
         <ImageView
             android:id="@+id/imagesearch"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/ic_search_black_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/edittextaxtarish"
@@ -44,6 +45,7 @@
             android:includeFontPadding="false"
             android:imeOptions="actionSearch"
             android:inputType="text"
+            android:onClick="onClick"
             android:textColor="#C3C3C3"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"

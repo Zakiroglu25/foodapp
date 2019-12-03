@@ -36,33 +36,29 @@
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
             app:srcCompat="@drawable/raeyting_bck" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout9"
             android:layout_width="0dp"
-            android:layout_height="419dp"
+            android:layout_height="374dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/catdirilma"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7"
-            app:layout_constraintVertical_bias="0.285">
+            app:layout_constraintStart_toStartOf="parent">
 
             <Button
                 android:id="@+id/restorana_kec_thanks"
                 android:layout_width="199dp"
                 android:layout_height="53dp"
-                android:layout_marginTop="120dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="55dp"
                 android:background="@drawable/btn_regster"
                 android:text="Restoranlara keç"
                 android:textAlignment="center"
@@ -71,27 +67,27 @@
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView39"
                 android:layout_width="243dp"
                 android:layout_height="51dp"
-                android:layout_marginTop="40dp"
                 android:text="Çatdırılmanın keyfiyyəti bizim üçün çox önəmlidir."
                 android:textAlignment="center"
                 android:textColor="#290D44"
                 android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView42"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
+                android:layout_marginBottom="41dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView39"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -101,14 +97,14 @@
                 android:id="@+id/textView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="56dp"
                 android:text="Rəyiniz üçün təşəkkürlər!"
                 android:textAlignment="center"
                 android:textColor="#290D44"
                 android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/restorana_kec_thanks"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

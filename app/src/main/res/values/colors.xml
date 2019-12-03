@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#EB2A33</color>
-    <color name="colorPrimaryDark">#290D44</color>
+    <color name="colorPrimaryDark">#DB2231</color>
     <color name="colorAccent">#EB2A33</color>
     <color name="color_nav_ic_default">#680E29</color>
     <color name="color_nav_ic_selected">#EB2A33</color>

@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.auth.LoginActivities.fragments.anasehife.AnaSehifeFragment">
 
+<!--    <include layout="@layout/axtarish_into_axtarish"-->
+<!--        android:id="@+id/axtaris"/>-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/axtarish_lv"
         android:layout_width="match_parent"

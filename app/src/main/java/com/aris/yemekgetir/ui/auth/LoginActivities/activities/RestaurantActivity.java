@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -12,7 +13,9 @@ import android.view.View;
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SebetActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.RestaurantAdapter;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.SebetFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.BotttomDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

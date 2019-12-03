@@ -45,23 +45,23 @@
                 >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:text="SMS"
-                    android:src="@drawable/ic_facebook"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
                     android:maxLines="1"
-                    android:layout_height="32dp"/>
+                    android:src="@drawable/ic_facebook"
+                    android:text="SMS"
+                    android:visibility="visible" />
 
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:text="Facebook"
-                    android:layout_gravity="center"
-                    android:textColor="#000"
-                    android:textSize="19sp"
                     android:includeFontPadding="false"
-                    android:layout_height="wrap_content"
-                    />
+                    android:text="Facebook"
+                    android:textColor="#290D44"
+                    android:textSize="19sp" />
 
             </LinearLayout>
 
@@ -80,7 +80,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:text="SMS"
-                    android:src="@drawable/ic_instagram"
+                    android:src="@drawable/ic_insta"
 
                     android:maxLines="1"
                     android:layout_height="32dp"/>
@@ -90,8 +90,9 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:text="Instagram"
+                    android:layout_marginRight="5dp"
                     android:layout_gravity="center"
-                    android:textColor="#000"
+                    android:textColor="#290D44"
                     android:textSize="19sp"
                     android:includeFontPadding="false"
                     android:layout_height="wrap_content"
@@ -113,23 +114,22 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:text="SMS"
-                    android:src="@drawable/ic_twitter"
-
+                    android:layout_height="32dp"
                     android:maxLines="1"
-                    android:layout_height="32dp"/>
+
+                    android:src="@drawable/ic_twitte"
+                    android:text="SMS" />
 
                 <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:text="Twitter"
-                    android:layout_gravity="center"
-                    android:textColor="#000"
-                    android:textSize="19sp"
                     android:includeFontPadding="false"
-                    android:layout_height="wrap_content"
-                    />
+                    android:text="Twitter"
+                    android:textColor="#290D44"
+                    android:textSize="19sp" />
 
             </LinearLayout>
 
@@ -148,11 +148,11 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:text="SMS"
-                    android:src="@drawable/ic_phone"
-
+                    android:layout_height="32dp"
                     android:maxLines="1"
-                    android:layout_height="32dp"/>
+
+                    android:src="@drawable/ic_phon"
+                    android:text="SMS" />
 
                 <TextView
                     android:layout_marginStart="16dp"
@@ -160,7 +160,7 @@
                     android:layout_width="0dp"
                     android:text="Telefon"
                     android:layout_gravity="center"
-                    android:textColor="#000"
+                    android:textColor="#290D44"
                     android:textSize="19sp"
                     android:includeFontPadding="false"
                     android:layout_height="wrap_content"
@@ -194,7 +194,7 @@
                     android:layout_width="0dp"
                     android:text="Email"
                     android:layout_gravity="center"
-                    android:textColor="#000"
+                    android:textColor="#290D44"
                     android:textSize="19sp"
                     android:includeFontPadding="false"
                     android:layout_height="wrap_content"
