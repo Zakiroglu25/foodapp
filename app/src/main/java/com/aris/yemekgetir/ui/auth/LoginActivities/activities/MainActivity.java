@@ -1,6 +1,7 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -10,9 +11,11 @@ import androidx.navigation.ui.NavigationUI;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ExpandableListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,31 +24,47 @@ import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.BizimleElaqeActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.HaqqimizdaActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.KuryerOl;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.MessageActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.ProfilimActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.PromokodActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishleriPlanlashdir;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishlerimActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.UnvanActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.ExpandleListAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.AksiyalarFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.AxtarishFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends BaseActivity {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+
     DrawerLayout drawer;
     BottomNavigationView bottomNavView;
     NavigationView navView;
 
-    private AksiyalarFragment aksiyalarFragment;
-    private AxtarishFragment axtarishFragment;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initViews();
 
+
+initViews();
+        // setting list adapter
     }
+
+    /*
+     * Preparing the list data
+     */
+
 
     private void initViews() {
         drawer = findViewById(R.id.drawer_layout);

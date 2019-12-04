@@ -11,7 +11,7 @@
         android:id="@+id/listTitle"
         android:layout_width="411dp"
         android:layout_height="77dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="40dp"
         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"

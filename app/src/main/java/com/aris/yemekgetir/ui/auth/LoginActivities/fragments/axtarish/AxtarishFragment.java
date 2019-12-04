@@ -97,14 +97,14 @@ public class AxtarishFragment extends BaseFragment {
         ));
 
         AxtarishAdapter axtarishAdapter = new AxtarishAdapter();
-
-        axtarishAdapter.setOnRecyclerItemClick(o -> {
-            Log.e(TAG, "onViewCreated: ");
-            if (o instanceof Search) {
-                startActivity(new Intent(getContext(), SearchResult.class));
-            }
-
-        });
+//
+//        axtarishAdapter.setOnRecyclerItemClick(o -> {
+//            Log.e(TAG, "onViewCreated: ");
+//            if (o instanceof Search) {
+//                startActivity(new Intent(getContext(), SearchResult.class));
+//            }
+//
+//        });
 
 
         recyclerView.addItemDecoration(new RecyclerSpaceDec(16));

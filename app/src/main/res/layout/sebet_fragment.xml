@@ -7,49 +7,15 @@
     android:layout_height="match_parent">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:background="#F9F9F9"
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="408dp"
+        android:layout_height="93dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="279dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Biscuits on Plate x 2"
-            android:textColor="#290D44"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView63"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="58dp"
-            android:layout_height="52dp"
-            android:background="@drawable/ic_group_8"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView63"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="296dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
 
 
     <TextView
@@ -57,11 +23,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="5dp"
         android:text="1 ədəd"
         app:layout_constraintEnd_toStartOf="@+id/button7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
 
     <View
         android:id="@+id/view7"
@@ -76,15 +42,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
-    <Button
+    <TextView
         android:id="@+id/button7"
         android:layout_width="82dp"
         android:layout_height="34dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="18dp"
+        android:textSize="16sp"
+        android:text="-   |   +"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#290D44"
+        android:paddingTop="12sp"
         android:background="@drawable/sebet_plus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
@@ -177,10 +149,13 @@
             android:layout_marginEnd="19dp"
             android:layout_marginBottom="12dp"
             android:background="@drawable/sebet_plus_minus"
+            android:paddingTop="12sp"
+            android:text="-   |  1  |   +"
+            android:textAlignment="center"
+            android:textColor="#290D44"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/send_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.92" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -261,6 +236,18 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
     <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:text="Səbət"
+        android:textColor="#290D44"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout17" />
+
+    <TextView
         android:id="@+id/textView49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -272,18 +259,6 @@
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
-
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="12dp"
-        android:text="Səbət"
-        android:textColor="#290D44"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout17" />
 
     <TextView
         android:id="@+id/textView51"

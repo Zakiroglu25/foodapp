@@ -22,7 +22,6 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
             app:title="Sifariş statusu" />
 
     </com.google.android.material.appbar.AppBarLayout>

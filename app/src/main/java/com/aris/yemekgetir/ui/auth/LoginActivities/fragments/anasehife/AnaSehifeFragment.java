@@ -16,11 +16,13 @@ import android.view.ViewGroup;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.Bahoo;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.RestaurantActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.anasehife.adapter.AnaSehifeAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.RecyclerSpaceDec;
 import com.aris.yemekgetir.ui.auth.LoginActivities.models.Restaurant;
+import com.yandex.mapkit.search.Search;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -73,7 +75,7 @@ public class AnaSehifeFragment extends BaseFragment{
             }
 
         });
-
+//
         recyclerView.addItemDecoration(new RecyclerSpaceDec(16));
 
         recyclerView.setAdapter(anaSehifeAdapter);

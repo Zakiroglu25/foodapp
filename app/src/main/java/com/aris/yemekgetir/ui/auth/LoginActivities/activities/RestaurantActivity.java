@@ -33,8 +33,8 @@ public class RestaurantActivity extends BaseActivity implements BotttomDialog.Bo
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RestaurantActivity.this, RegisterNo.class);
-                startActivity(intent);
+//                Intent intent = new Intent(RestaurantActivity.this, RegisterNo.class);
+//                startActivity(intent);
             }
         });
 

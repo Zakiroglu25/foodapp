@@ -11,12 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.MapStatus"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.UnvanDeish"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.AxtarishYemek" />
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.MapStatus" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.SebetActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.Bahoo" />
         <activity android:name=".ui.auth.LoginActivities.activities.Axtaris" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.SifarishleriPlanlashdir" />
-        <activity android:name=".ui.auth.LoginActivities.activities.AddAddress" />
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.Thanks" />
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.Kuryere_qiymet" />
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.RaitingVerTwo" />
@@ -27,7 +28,7 @@
         <activity android:name=".ui.auth.LoginActivities.activities.AddMenuRestaurant" />
         <activity android:name=".ui.auth.LoginActivities.activities.bankActivity.BankCartActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.bankActivity.NagdOdenis" />
-        <activity android:name=".ui.auth.LoginActivities.activities.MessageActivity" />
+        <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.MessageActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.bankActivity.ConfirmPaymentActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.RestaurantActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.MainActivity" />

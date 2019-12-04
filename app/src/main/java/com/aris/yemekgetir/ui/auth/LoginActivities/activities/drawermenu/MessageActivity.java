@@ -1,6 +1,7 @@
-package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
+package com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -28,6 +29,13 @@ public class MessageActivity extends AppCompatActivity {
         ss.setSpan(fcsRed,13,23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView.setText(ss);
+
+        Toolbar myChildToolbar =
+                findViewById(R.id.toolbar);
+        setSupportActionBar(myChildToolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
 
     }
 }

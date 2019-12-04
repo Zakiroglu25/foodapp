@@ -87,7 +87,6 @@ public class AnaSehifeAdapter extends BaseAdapter<RecyclerView.ViewHolder, Objec
 
             case ALL:
                 ((RestaurantVH) holder).build();
-
                 break;
         }
     }
@@ -96,7 +95,6 @@ public class AnaSehifeAdapter extends BaseAdapter<RecyclerView.ViewHolder, Objec
     @Override
     public int getItemViewType(int position) {
         Object o = getItemOn(position);
-
         if (o instanceof ViewType) {
             return ((ViewType) o).i;
         } else if (o instanceof String) {

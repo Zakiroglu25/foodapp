@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/register_bck"
-    tools:context=".ui.auth.LoginActivities.activities.MessageActivity">
+    tools:context=".ui.auth.LoginActivities.activities.drawermenu.MessageActivity">
 
     <ScrollView
         android:layout_width="match_parent"

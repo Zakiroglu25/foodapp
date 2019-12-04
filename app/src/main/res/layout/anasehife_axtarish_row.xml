@@ -33,13 +33,17 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
-        <TextView
+        <EditText
+            android:id="@+id/editTextSearchHome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="#C3C3C3"
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:text="Yerinizi yaz"
+            android:inputType="textFilter"
+            android:hint="Yerinizi yaz"
+            android:background="#fff"
+            android:lines="1"
             android:includeFontPadding="false"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
