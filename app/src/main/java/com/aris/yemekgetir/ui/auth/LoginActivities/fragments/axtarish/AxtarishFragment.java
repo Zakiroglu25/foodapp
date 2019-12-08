@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.AxtarishYemek;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.SearchResult;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.adapter.AxtarishAdapter;
@@ -48,31 +49,6 @@ public class AxtarishFragment extends BaseFragment {
                 ViewModelProviders.of(this).get(AxtarishViewModel.class);
         View root = inflater.inflate(R.layout.axtarish_fragment, container, false);
 
-
-
-//        edittextaxtarish = root.findViewById(R.id.edittextaxtarish);
-//
-//        edittextaxtarish.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-//            @Override
-//            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-//                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-//                    System.out.println("Fuck you");
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
-//
-//        edittextaxtarish.setOnEditorActionListener(new EditText.OnEditorActionListener() {
-//            @Override
-//            public boolean onEditorAction(EditText v, int actionId, KeyEvent event) {
-//                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-//                    Log.i(TAG, "onEditorAction: Adam kisi olar");
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
         return root;
     }
 
@@ -97,14 +73,13 @@ public class AxtarishFragment extends BaseFragment {
         ));
 
         AxtarishAdapter axtarishAdapter = new AxtarishAdapter();
-//
-//        axtarishAdapter.setOnRecyclerItemClick(o -> {
-//            Log.e(TAG, "onViewCreated: ");
-//            if (o instanceof Search) {
-//                startActivity(new Intent(getContext(), SearchResult.class));
-//            }
-//
-//        });
+
+
+        axtarishAdapter.setListener((s)->{
+            startActivity(new Intent(getContext(), AxtarishYemek.class));
+            return false;
+        });
+
 
 
         recyclerView.addItemDecoration(new RecyclerSpaceDec(16));

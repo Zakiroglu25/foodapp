@@ -20,7 +20,7 @@ public class SifarishlerimActivity extends AppCompatActivity {
     ExpandleListAdapter listAdapter;
     ExpandableListView expListView;
 
-    List<String> listDataHeader =new ArrayList<>();
+    List<String> listDataHeader = new ArrayList<>();
     HashMap<String, List<Object>> listDataChild = new HashMap<>();
 
     private static final String TAG = "ArchiveActivity";
@@ -38,9 +38,9 @@ public class SifarishlerimActivity extends AppCompatActivity {
         expListView = findViewById(R.id.expandableListView);
         // preparing list data
 
-        Log.e(TAG, "onCreate: "+listDataHeader );
-        Log.e(TAG, "onCreate: "+listDataChild );
-        listAdapter = new ExpandleListAdapter( listDataHeader, listDataChild);
+        Log.e(TAG, "onCreate: " + listDataHeader);
+        Log.e(TAG, "onCreate: " + listDataChild);
+        listAdapter = new ExpandleListAdapter(listDataHeader, listDataChild);
 
         expListView.setAdapter(listAdapter);
 
@@ -87,21 +87,27 @@ public class SifarishlerimActivity extends AppCompatActivity {
 //                return false;
 //            }
 //        });
-        }
+    }
 
 
     private void prepareListData() {
         listDataHeader.add("Gundelik Yemek");
         listDataHeader.add("Gundelik Yemek");
+        listDataHeader.add("Gundelik Yemek");
+
+
 
 
         // Adding child data
         List<Object> top250 = new ArrayList<>();
+        top250.add("pamador");
+        top250.add("pamador");
+        top250.add("pamador");
         top250.add(2.0);
-        top250.add(2.0);
-        top250.add(2.0);
+
 
         listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
         listDataChild.put(listDataHeader.get(1), top250); // Header, Child data
 
-    }}
+    }
+}

@@ -1,6 +1,8 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.fragments.anasehife.adapter;
 
+import android.view.KeyEvent;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,6 +21,13 @@ import java.util.Arrays;
 
 public class AnaSehifeAdapter extends BaseAdapter<RecyclerView.ViewHolder, Object> {
 
+    private OnSearchListener listener;
+
+
+    public interface OnSearchListener {
+        boolean onSearch(String text);
+    }
+
     @NonNull
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         switch (ViewType.valueOf(viewType)) {
@@ -35,6 +44,10 @@ public class AnaSehifeAdapter extends BaseAdapter<RecyclerView.ViewHolder, Objec
             default:
                 throw new RuntimeException("ViewType Error");
         }
+    }
+
+    public void setListener(OnSearchListener listener) {
+        this.listener = listener;
     }
 
     @Override
@@ -79,6 +92,8 @@ public class AnaSehifeAdapter extends BaseAdapter<RecyclerView.ViewHolder, Objec
 
                 break;
             case SEARCH:
+                if (listener != null)
+                    ((SearchVH) holder).editText.setOnEditorActionListener((v, actionId, event) -> listener.onSearch(v.getText().toString()));
                 break;
 
             case TEXT:

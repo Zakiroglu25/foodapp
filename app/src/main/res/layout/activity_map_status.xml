@@ -27,6 +27,7 @@
         android:text="Sifarişin statusuna qayıt"
         android:textAllCaps="false"
         android:textColor="#fff"
+        android:fontFamily="@font/geogtq_md"
         android:textSize="18sp"
         android:background="#ED2E37"
         app:layout_constraintBottom_toBottomOf="parent"

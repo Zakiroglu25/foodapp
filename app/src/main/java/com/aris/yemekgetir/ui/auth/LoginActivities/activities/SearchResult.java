@@ -12,8 +12,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.aris.yemekgetir.R;
-import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.Authentication;
-import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
 import com.yandex.mapkit.Animation;
 import com.yandex.mapkit.MapKitFactory;
 import com.yandex.mapkit.geometry.Point;
@@ -89,7 +87,7 @@ public class SearchResult extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.add_menu, menu);
+        //getMenuInflater().inflate(R.menu.add_menu, menu);
         return true;
     }
 
@@ -107,6 +105,14 @@ public class SearchResult extends AppCompatActivity {
         super.onStart();
         MapKitFactory.getInstance().onStart();
         mapview.onStart();
+    }
+
+    public void restClicks(View view) {
+        switch (view.getId()) {
+            case R.id.back:
+                onBackPressed();
+                break;
+        }
     }
 }
 

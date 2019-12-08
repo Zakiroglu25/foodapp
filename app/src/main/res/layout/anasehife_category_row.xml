@@ -33,6 +33,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="2"
+        android:fontFamily="@font/geogtq_md"
         tools:text="Rusasdasdasd"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

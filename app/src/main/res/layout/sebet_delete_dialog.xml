@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="263dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/search_edittext_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="152dp">
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="Səbəti silməyə əminsən?"
+            android:textAlignment="center"
+            android:fontFamily="@font/geogtq_md"
+            android:textColor="#000000"
+            android:onClick="onClick"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_beli_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_beli_dialog"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/delete_dialog_beli_qirmizi_5br"
+            android:text="Bəli"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/delete_dialog_benovshe"
+            android:text="Xeyr"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,18 +42,20 @@
         android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
         android:text="Yasamal Rayonu"
-        android:textColor="#000"
-        android:textSize="19sp"
+        android:fontFamily="@font/geogtq_md"
+        android:textColor="#270E47"
+        android:textSize="18sp"
         android:layout_height="wrap_content"/>
 
 
     <TextView
-        android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
-        android:text="Zahid Xəlilov 68"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/geog_lightitalic"
+        android:text="Abdulvahab Salamzada 13"
         android:textColor="#000"
-        android:textSize="17sp"
-        android:layout_height="wrap_content"/>
+        android:textSize="17sp" />
 
 
 </LinearLayout>

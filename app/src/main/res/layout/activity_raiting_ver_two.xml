@@ -64,6 +64,7 @@
                 android:text="Kuryerə qiymət ver"
                 android:textAlignment="center"
                 android:textAllCaps="false"
+                android:fontFamily="@font/geogtq_md"
                 android:textColor="#fff"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toTopOf="@+id/restoranlara_kec"
@@ -77,6 +78,7 @@
                 android:layout_marginBottom="55dp"
                 android:background="@drawable/restoranakec_line"
                 android:text="Restoranlara keç"
+                android:fontFamily="@font/geogtq_md"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#290D44"
@@ -90,6 +92,7 @@
                 android:layout_width="245dp"
                 android:layout_height="71dp"
                 android:layout_marginBottom="25dp"
+                android:fontFamily="@font/geog_lightitalic"
                 android:text="Sizin rəylər çatdırılan yeməklərin keyfiyyətinə nəzarət etməyə yardımçı olur."
                 android:textAlignment="center"
                 android:textColor="#290D44"
@@ -97,7 +100,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/kuryere_qiymet_ver"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                app:layout_constraintVertical_bias="0.39" />
 
             <ImageView
                 android:id="@+id/imageView14"

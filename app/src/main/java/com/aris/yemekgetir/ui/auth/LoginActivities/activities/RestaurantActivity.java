@@ -2,20 +2,20 @@ package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
-import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SebetActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.RestaurantAdapter;
-import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.SebetFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.BotttomDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -33,8 +33,7 @@ public class RestaurantActivity extends BaseActivity implements BotttomDialog.Bo
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(RestaurantActivity.this, RegisterNo.class);
-//                startActivity(intent);
+                showDialog();
             }
         });
 
@@ -71,13 +70,15 @@ public class RestaurantActivity extends BaseActivity implements BotttomDialog.Bo
         }));
 
     }
+
     public void restClicks(View view) {
         switch (view.getId()) {
-            case R.id.back_iv:
+            case R.id.back:
                 onBackPressed();
                 break;
         }
     }
+
     @Override
     public void onButtonClicked(int text) {
         switch (text) {
@@ -94,5 +95,23 @@ public class RestaurantActivity extends BaseActivity implements BotttomDialog.Bo
         }
 
     }
+
+
+    void showDialog() {
+
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View view = inflater.inflate(R.layout.alert_dialog, null);
+
+
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .create();
+
+        alertDialog.show();
+
+        alertDialog.getWindow().setGravity(Gravity.BOTTOM);
+
+    }
+
 }
 

@@ -1,10 +1,13 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.activities;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
@@ -12,15 +15,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.bankActivity.BankCartActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.BizimleElaqeActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.HaqqimizdaActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.KuryerOl;
@@ -30,15 +37,8 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.Promoko
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishleriPlanlashdir;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishlerimActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.UnvanActivity;
-import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.ExpandleListAdapter;
-import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.aksiyalar.AksiyalarFragment;
-import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.AxtarishFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,16 +48,13 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navView;
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-initViews();
+        initViews();
         // setting list adapter
     }
 
@@ -65,6 +62,7 @@ initViews();
      * Preparing the list data
      */
 
+    private static final String TAG = "MainActivity";
 
     private void initViews() {
         drawer = findViewById(R.id.drawer_layout);
@@ -72,8 +70,24 @@ initViews();
         navView = findViewById(R.id.nav_view_drawer);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> configureToolbar(destination.getId() == R.id.navigation_sebet));
+
         NavigationUI.setupWithNavController(bottomNavView, navController);
         navView.setNavigationItemSelectedListener(navigationItemSelectedListener());
+
+
+
+//
+//        bottomNavView.setOnNavigationItemSelectedListener(menuItem -> {
+//            Log.e(TAG, "initViews: "+menuItem.toString());
+//            return true;
+//        })
+    }
+
+    private void configureToolbar(boolean isBag) {
+        int visibility = isBag ? View.VISIBLE : View.GONE;
+        findViewById(R.id.toolbar_delete).setVisibility(visibility);
     }
 
     private NavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener() {
@@ -104,7 +118,8 @@ initViews();
                 case R.id.nav_bildirisler:
                     startActivity(new Intent(this, MessageActivity.class));
 
-                    break;case R.id.nav_planlashdir:
+                    break;
+                case R.id.nav_planlashdir:
                     startActivity(new Intent(this, SifarishleriPlanlashdir.class));
                     break;
                 default:
@@ -130,59 +145,66 @@ initViews();
 //                    }
 //                });
 //                break;
-        }
-    }
-        public TextView txtView;
-
-       private void itil(){
-            // Button1
-            final Button btn1 = (Button) findViewById(R.id.btn_odemek_raiting);
-            btn1.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    ShowDialog();
-                }
-            });
-
-        }
-
-        public void ShowDialog()
-        {
-            final AlertDialog.Builder popDialog = new AlertDialog.Builder(this);
-            final RatingBar rating = new RatingBar(this);
-            rating.setMax(6);
-
-            popDialog.setIcon(android.R.drawable.btn_star_big_on);
-            popDialog.setTitle("Vote!! ");
-            popDialog.setView(rating);
-
-            // Button OK
-            popDialog.setPositiveButton(android.R.string.ok,
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            txtView.setText(String.valueOf(rating.getProgress()));
-                            dialog.dismiss();
-                        }
-
-                    })
-
-                    // Button Cancel
-                    .setNegativeButton("Cancel",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    dialog.cancel();
-                                }
-                            });
-
-            popDialog.create();
-            popDialog.show();
-
-        }
-
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-           // getMenuInflater().inflate(R.menu.activity_main, menu);
-            return true;
+            case R.id.toolbar_delete:
+                //// TODO: 12/6/2019  bura yaz amk  :) _|_ (|) *akif* qoy partdassinnn
+                        showDialogSebet();
+                break;
         }
 
     }
+
+    void showDialogSebet() {
+
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View view = inflater.inflate(R.layout.sebet_delete_dialog, null);
+
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .create();
+
+        alertDialog.show();
+    }
+
+
+
+
+//
+//    public void ShowDialog() {
+//        final AlertDialog.Builder popDialog = new AlertDialog.Builder(this);
+//        final RatingBar rating = new RatingBar(this);
+//        rating.setMax(6);
+//
+//        popDialog.setIcon(android.R.drawable.btn_star_big_on);
+//        popDialog.setTitle("Vote!! ");
+//        popDialog.setView(rating);
+//
+//        // Button OK
+//        popDialog.setPositiveButton(android.R.string.ok,
+//                new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        txtView.setText(String.valueOf(rating.getProgress()));
+//                        dialog.dismiss();
+//                    }
+//
+//                })
+//
+//                // Button Cancel
+//                .setNegativeButton("Cancel",
+//                        new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int id) {
+//                                dialog.cancel();
+//                            }
+//                        });
+//
+//        popDialog.create();
+//        popDialog.show();
+//
+//    }
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        return true;
+        }
+
+
 

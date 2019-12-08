@@ -34,6 +34,19 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
+        <ImageView
+            android:id="@+id/toolbar_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="toolbarClick"
+            android:padding="12dp"
+            android:src="@drawable/ic_trash"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"

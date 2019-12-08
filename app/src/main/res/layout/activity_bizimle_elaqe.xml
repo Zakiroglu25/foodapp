@@ -60,6 +60,7 @@
                     android:layout_weight="1"
                     android:includeFontPadding="false"
                     android:text="Facebook"
+                    android:fontFamily="@font/geogtq_md"
                     android:textColor="#290D44"
                     android:textSize="19sp" />
 
@@ -90,6 +91,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:text="Instagram"
+                    android:fontFamily="@font/geogtq_md"
                     android:layout_marginRight="5dp"
                     android:layout_gravity="center"
                     android:textColor="#290D44"
@@ -128,6 +130,7 @@
                     android:layout_weight="1"
                     android:includeFontPadding="false"
                     android:text="Twitter"
+                    android:fontFamily="@font/geogtq_md"
                     android:textColor="#290D44"
                     android:textSize="19sp" />
 
@@ -159,6 +162,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:text="Telefon"
+                    android:fontFamily="@font/geogtq_md"
                     android:layout_gravity="center"
                     android:textColor="#290D44"
                     android:textSize="19sp"
@@ -193,6 +197,7 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:text="Email"
+                    android:fontFamily="@font/geogtq_md"
                     android:layout_gravity="center"
                     android:textColor="#290D44"
                     android:textSize="19sp"

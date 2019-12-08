@@ -22,7 +22,7 @@ public class BankCartActivity extends AppCompatActivity {
         setSupportActionBar(myChildToolbar);
 
         // Get a support ActionBar corresponding to this toolbar
-       // myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
+        myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
     }
 
     }

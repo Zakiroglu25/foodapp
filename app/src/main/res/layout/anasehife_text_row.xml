@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="wrap_content"
+    android:fontFamily="@font/geogtq_md"
     android:id="@+id/text"
     android:textSize="20sp"
     android:textColor="#000"

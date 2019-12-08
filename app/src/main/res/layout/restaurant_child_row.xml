@@ -12,6 +12,8 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="16dp"
       android:text="Qəlyanaltilar 5"
+      android:textColor="#290D44"
+      android:fontFamily="@font/geog_bdit"
       android:textSize="18sp" />
 
   <LinearLayout
@@ -27,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Pomidor yumurta"
-        android:textColor="#000"
+        android:fontFamily="@font/geogtq_md"
+        android:textColor="#290D44"
         android:textSize="18sp"
         />
 
@@ -35,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="14.00 AZN"
+        android:fontFamily="@font/geogtq_md"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp" />
 
@@ -45,6 +49,8 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="Yumurta,pendir,bal,yag,pomidor,tost çörək"
+      android:textColor="#404040"
+      android:fontFamily="@font/geog_lightitalic"
       android:textSize="18sp" />
 
   <androidx.constraintlayout.widget.ConstraintLayout

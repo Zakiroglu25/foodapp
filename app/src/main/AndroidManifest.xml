@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.auth.LoginActivities.activities.UnvanDeish"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.SebetBoshdur"></activity>
+        <activity android:name=".ui.auth.LoginActivities.activities.UnvanDeish" />
         <activity android:name=".ui.auth.LoginActivities.activities.AxtarishYemek" />
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.MapStatus" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.SebetActivity" />
@@ -31,7 +32,9 @@
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.MessageActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.bankActivity.ConfirmPaymentActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.RestaurantActivity" />
-        <activity android:name=".ui.auth.LoginActivities.activities.MainActivity" />
+        <activity
+            android:name=".ui.auth.LoginActivities.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.HaqqimizdaActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.BizimleElaqeActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.PromokodActivity" />

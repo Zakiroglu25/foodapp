@@ -18,6 +18,7 @@ import com.aris.yemekgetir.R;
 import com.aris.yemekgetir.ui.auth.LoginActivities.Utils;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.Bahoo;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.RestaurantActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.SearchResult;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseFragment;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.anasehife.adapter.AnaSehifeAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.helpers.RecyclerSpaceDec;
@@ -67,6 +68,12 @@ public class AnaSehifeFragment extends BaseFragment{
         ));
 
         AnaSehifeAdapter anaSehifeAdapter= new AnaSehifeAdapter();
+
+
+        anaSehifeAdapter.setListener(text -> {
+            startActivity(new Intent(getContext(), SearchResult.class));
+            return false;
+        });
 
         anaSehifeAdapter.setOnRecyclerItemClick(o -> {
             Log.e(TAG, "onViewCreated: ");

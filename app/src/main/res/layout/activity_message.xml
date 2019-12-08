@@ -7,16 +7,21 @@
     android:background="@drawable/register_bck"
     tools:context=".ui.auth.LoginActivities.activities.drawermenu.MessageActivity">
 
+    <!-- comment row-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
-<!-- comment row-->
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="0dp"
@@ -43,7 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="30 avqust 2019"
-        android:textColor="#000000"
+        android:fontFamily="@font/geog_lightitalic"
+        android:textColor="#290D44"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
@@ -84,6 +90,7 @@
             android:text="Əziz müştəri Cafe City sifarişini qəbul etdi. Sifarişiniz 40 dəqiqə sonra ünvanda olacaq."
             android:textAlignment="inherit"
             android:textColor="#000000"
+            android:fontFamily="@font/geogtq_md"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"

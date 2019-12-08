@@ -17,31 +17,25 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseRecyclerVH;
 public class SearchVH extends BaseRecyclerVH {
 
 
-  private static int layout = R.layout.anasehife_axtarish_row;
-  private EditText editText;
-
-
-  private SearchVH(@NonNull View itemView) {
-    super(itemView);
-    editText = itemView.findViewById(R.id.editTextSearchHome);
-    // TODO: 12/4/2019 Kursad bax
-    editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-      @Override
-      public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        Intent intent = new Intent(itemView.getContext(), SearchResult.class);
-        itemView.getContext().startActivity(intent);
-        return false;
-      }
-    });
-  }
-
-  public void build() {
-  }
+    private static int layout = R.layout.anasehife_axtarish_row;
+    public EditText editText;
 
 
 
-  public static SearchVH create(ViewGroup parent){
-    return  new SearchVH(view(parent,layout));
-  }
+    private SearchVH(@NonNull View itemView) {
+        super(itemView);
+        editText = itemView.findViewById(R.id.editTextSearchHome);
+        // TODO: 12/4/2019 Kursad bax
+    }
+
+    public void build() {
+    }
+
+
+    public static SearchVH create(ViewGroup parent) {
+        return new SearchVH(view(parent, layout));
+    }
+
+
 }
 

@@ -17,7 +17,7 @@ public class RegisterCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_code);
 
-        Button button = findViewById(R.id.register_code_davamet_btn);
+        Button button = findViewById(R.id.btn_ileri_auth);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

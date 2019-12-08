@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Çatdırılma vaxtı"
+        android:fontFamily="@font/geog_lightitalic"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Ünvan"
+        android:fontFamily="@font/geog_lightitalic"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -106,9 +108,10 @@
 
     <TextView
         android:id="@+id/textView68"
-        android:layout_width="134dp"
-        android:layout_height="19dp"
+        android:layout_width="135dp"
+        android:layout_height="21dp"
         android:layout_marginBottom="12dp"
+        android:fontFamily="@font/geog_mdit"
         android:text="Cəfər Cabbarlı 23"
         android:textColor="#290D44"
         android:textSize="14sp"
@@ -136,7 +139,7 @@
         android:layout_marginTop="16dp"
         android:text="Bina"
         android:textSize="14sp"
-
+        android:fontFamily="@font/geog_lightitalic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,6 +150,7 @@
         android:layout_marginStart="6dp"
         android:layout_marginTop="40dp"
         android:text="20"
+        android:fontFamily="@font/geog_mdit"
         android:textColor="#290D44"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,6 +163,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="16dp"
         android:text="Blok"
+        android:fontFamily="@font/geog_lightitalic"
         app:layout_constraintStart_toEndOf="@+id/textView69"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -169,6 +174,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="16dp"
         android:text="Mənzil"
+        android:fontFamily="@font/geog_lightitalic"
         app:layout_constraintStart_toEndOf="@+id/textView70"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -179,6 +185,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="16dp"
         android:text="Mərtəbə"
+        android:fontFamily="@font/geog_lightitalic"
         android:textSize="14sp"
 
         app:layout_constraintStart_toEndOf="@+id/textView71"
@@ -191,6 +198,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:text="Kod"
+        android:fontFamily="@font/geog_lightitalic"
         android:textSize="14sp"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -217,6 +225,7 @@
       android:layout_marginStart="20dp"
       android:layout_marginTop="20dp"
       android:text="Telefon"
+      android:fontFamily="@font/geog_lightitalic"
       android:textSize="14sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/constraintLayout21" />
@@ -276,6 +285,7 @@
       android:layout_marginStart="20dp"
       android:layout_marginTop="23dp"
       android:text="Promokod"
+      android:fontFamily="@font/geog_lightitalic"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/view11" />
 
@@ -288,6 +298,7 @@
       android:background="@drawable/bank_karti_btn"
       android:text="Bank kartı"
       android:textSize="18sp"
+      android:fontFamily="@font/geog_mdit"
       android:textColor="#fff"
       android:onClick="onClick"
       android:textAllCaps="false"
@@ -304,12 +315,26 @@
       android:background="@drawable/bank_kart_nagd_btn"
       android:textSize="18sp"
       android:text="Nağd"
+      android:fontFamily="@font/geog_mdit"
       android:onClick="onClick"
       android:textColor="#fff"
       android:textAllCaps="false"
       app:layout_constraintBottom_toBottomOf="@+id/bankkarti"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="@+id/bankkarti" />
+
+  <TextView
+      android:id="@+id/textView98"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginBottom="11dp"
+      android:text="Ödəmə vasitəsi"
+      android:textColor="#290D44"
+      android:fontFamily="@font/geog_mdit"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toTopOf="@+id/bankkarti"
+      app:layout_constraintStart_toStartOf="parent" />
 
   <!--  <ScrollView-->
   <!--      android:layout_width="match_parent"-->
