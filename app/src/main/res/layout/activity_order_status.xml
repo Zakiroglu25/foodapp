@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.OrderStatus">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="0dp"
@@ -36,114 +37,109 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/rabadun"
-            android:layout_width="393dp"
-            android:layout_height="269dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="0dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/order_bck">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lebedun"
+        android:layout_width="196dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/rabadun"
+        android:layout_alignParentStart="true"
 
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="199dp"
-                android:layout_height="46dp"
-                android:layout_marginTop="16dp"
-                android:text="Gözlənilən çatdırılma vaxtı 10 dəqiqə."
-                android:fontFamily="@font/geogtq_md"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.494"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        android:background="@drawable/catdirilma"
+        app:layout_constraintBottom_toTopOf="@+id/rabadun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Sizin sifariş yoldadır"
-                android:fontFamily="@font/geogtq_md"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="Cafe City 28 May "
-                android:fontFamily="@font/geogtq_md"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
-
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/deqiqe_qalib_on" />
-
-            <TextView
-                android:id="@+id/on_deqiqe_qalib"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10 dəqiqə qalıb"
-                android:fontFamily="@font/geogtq_md"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView10" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/lebedun"
-            android:layout_width="196dp"
-            android:layout_height="32dp"
-            android:layout_above="@+id/rabadun"
-            android:layout_alignParentStart="true"
-
-            android:layout_marginStart="107dp"
-            android:layout_marginTop="295dp"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/catdirilma"
+        <TextView
+            android:id="@+id/chatdirilma_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/geogtq_md"
+            android:text="Çatdırılma"
+            android:textColor="#A51D39"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/chatdirilma_order"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Çatdırılma"
-                android:fontFamily="@font/geogtq_md"
-                android:textColor="#A51D39"
-                android:textSize="17sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </com.yandex.mapkit.mapview.MapView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rabadun"
+        android:layout_width="393dp"
+        android:layout_height="269dp"
+        android:background="@drawable/order_bck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="199dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/geogtq_md"
+            android:text="Gözlənilən çatdırılma vaxtı 10 dəqiqə."
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/geogtq_md"
+            android:text="Sizin sifariş yoldadır"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/geogtq_md"
+            android:text="Cafe City 28 May "
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/deqiqe_qalib_on" />
+
+        <TextView
+            android:id="@+id/on_deqiqe_qalib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/geogtq_md"
+            android:text="10 dəqiqə qalıb"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

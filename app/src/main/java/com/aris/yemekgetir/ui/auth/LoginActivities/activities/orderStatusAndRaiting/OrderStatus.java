@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.MainActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.auth.RegisterNo;
 import com.yandex.mapkit.Animation;
 import com.yandex.mapkit.MapKitFactory;
@@ -24,20 +25,23 @@ public class OrderStatus extends AppCompatActivity {
 
     private MapView mapview;
     TextView textView;
+    private static final int CODE_DRAW_OVER_OTHER_APP_PERMISSION = 2084;
 
     // Specify the name of the activity in place of map.    setContentView (R. layout.map);
     //
     private final String MAPKIT_API_KEY = "b7f7137a-58ad-44ce-8612-76b1910cfc0d";
     private final Point TARGET_LOCATION = new Point(59.945933, 30.320045);
     private static final String TAG = "OrderStatus";
-    @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
         MapKitFactory.setApiKey(MAPKIT_API_KEY);
         MapKitFactory.initialize(this);
 
-        Log.e(TAG, "onCreate: " );
+        Log.e(TAG, "onCreate: ");
         setContentView(R.layout.activity_order_status);
 
 
@@ -61,7 +65,6 @@ public class OrderStatus extends AppCompatActivity {
         });
 
 
-
         mapview = findViewById(R.id.mapview);
 
         mapview.getMap().move(
@@ -74,7 +77,13 @@ public class OrderStatus extends AppCompatActivity {
         setSupportActionBar(myChildToolbar);
 
 
-        myChildToolbar.setNavigationOnClickListener(view -> onBackPressed());
+        myChildToolbar.setNavigationOnClickListener(view -> {
+            if (isTaskRoot()) {
+                startActivity(new Intent(this, MainActivity.class));
+                finish();
+            } else
+                onBackPressed();
+        });
 
         // Get a support ActionBar corresponding to this toolbar
         ActionBar ab = getSupportActionBar();
@@ -89,7 +98,7 @@ public class OrderStatus extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-       // getMenuInflater().inflate(R.menu.add_menu, menu);
+        // getMenuInflater().inflate(R.menu.add_menu, menu);
         return true;
     }
 

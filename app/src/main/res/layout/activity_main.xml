@@ -21,6 +21,7 @@
         android:layout_gravity="start"
         app:itemTextColor="#270F43"
         app:itemIconTint="#270F43"
+        app:itemTextAppearance="@style/NavigationView"
         app:theme="@style/NavigationViewStyle"
         app:menu="@menu/drawer_nav_menu"
         app:itemHorizontalPadding="24dp"

@@ -13,6 +13,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -37,6 +38,7 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.Promoko
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishleriPlanlashdir;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.SifarishlerimActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.activities.drawermenu.UnvanActivity;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.adapter.SebetAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -47,20 +49,19 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavView;
     NavigationView navView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         initViews();
+
         // setting list adapter
     }
 
     /*
      * Preparing the list data
      */
+
 
     private static final String TAG = "MainActivity";
 
@@ -75,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
         NavigationUI.setupWithNavController(bottomNavView, navController);
         navView.setNavigationItemSelectedListener(navigationItemSelectedListener());
-
 
 
 //
@@ -145,66 +145,28 @@ public class MainActivity extends AppCompatActivity {
 //                    }
 //                });
 //                break;
-            case R.id.toolbar_delete:
-                //// TODO: 12/6/2019  bura yaz amk  :) _|_ (|) *akif* qoy partdassinnn
-                        showDialogSebet();
-                break;
+//            case R.id.toolbar_delete:
+//                //// TODO: 12/6/2019  bura yaz amk  :) _|_ (|) *akif* qoy partdassinnn
+////                showDialogSebet();
+//
+//                break;
         }
 
     }
 
     void showDialogSebet() {
-
         LayoutInflater inflater = LayoutInflater.from(this);
         View view = inflater.inflate(R.layout.sebet_delete_dialog, null);
-
         AlertDialog alertDialog = new AlertDialog.Builder(this)
                 .setView(view)
                 .create();
-
         alertDialog.show();
+
+
     }
+}
 
 
-
-
-//
-//    public void ShowDialog() {
-//        final AlertDialog.Builder popDialog = new AlertDialog.Builder(this);
-//        final RatingBar rating = new RatingBar(this);
-//        rating.setMax(6);
-//
-//        popDialog.setIcon(android.R.drawable.btn_star_big_on);
-//        popDialog.setTitle("Vote!! ");
-//        popDialog.setView(rating);
-//
-//        // Button OK
-//        popDialog.setPositiveButton(android.R.string.ok,
-//                new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        txtView.setText(String.valueOf(rating.getProgress()));
-//                        dialog.dismiss();
-//                    }
-//
-//                })
-//
-//                // Button Cancel
-//                .setNegativeButton("Cancel",
-//                        new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int id) {
-//                                dialog.cancel();
-//                            }
-//                        });
-//
-//        popDialog.create();
-//        popDialog.show();
-//
-//    }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        return true;
-        }
 
 
 

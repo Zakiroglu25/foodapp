@@ -4,6 +4,12 @@
     package="com.aris.yemekgetir">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+
 
     <application
         android:allowBackup="true"
@@ -23,7 +29,9 @@
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.Kuryere_qiymet" />
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.RaitingVerTwo" />
         <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.RaitingVer" />
-        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.OrderStatus" />
+        <activity android:name=".ui.auth.LoginActivities.activities.orderStatusAndRaiting.OrderStatus"
+            android:parentActivityName=".ui.auth.LoginActivities.activities.MainActivity" />
+
         <activity android:name=".ui.auth.LoginActivities.activities.SearchResult" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.KuryerOl" />
         <activity android:name=".ui.auth.LoginActivities.activities.AddMenuRestaurant" />
@@ -33,7 +41,10 @@
         <activity android:name=".ui.auth.LoginActivities.activities.bankActivity.ConfirmPaymentActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.RestaurantActivity" />
         <activity
-            android:name=".ui.auth.LoginActivities.activities.MainActivity"
+            android:name=".ui.auth.LoginActivities.activities.MainActivity"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.HaqqimizdaActivity" />
         <activity android:name=".ui.auth.LoginActivities.activities.drawermenu.BizimleElaqeActivity" />
@@ -55,7 +66,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-
+
+        <service
+        android:name=".ui.auth.LoginActivities.activities.FloatingViewService"
+        android:enabled="true"
+        android:exported="false"/>
+
     </application>
 
 </manifest>

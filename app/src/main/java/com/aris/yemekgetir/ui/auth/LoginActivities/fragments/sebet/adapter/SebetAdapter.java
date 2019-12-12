@@ -1,11 +1,15 @@
 package com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.adapter;
 
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.aris.yemekgetir.R;
+import com.aris.yemekgetir.ui.auth.LoginActivities.activities.bankActivity.ConfirmPaymentActivity;
 import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.model.Header;
+import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.axtarish.recyView.TextViewHolder;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.RecyVH.FotterVH;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.RecyVH.HeaderVH;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.RecyVH.RecyclerVH;
@@ -17,6 +21,14 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.models.Sebet;
 import java.util.Arrays;
 
 public class SebetAdapter extends BaseAdapter<RecyclerView.ViewHolder, Object> {
+
+    View.OnClickListener nextButtonListener;
+
+
+    public void setNextButtonListener(View.OnClickListener nextButtonListener) {
+        this.nextButtonListener = nextButtonListener;
+    }
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -42,6 +54,12 @@ public class SebetAdapter extends BaseAdapter<RecyclerView.ViewHolder, Object> {
             case SHABLON:
                 break;
             case FOOTTER:
+
+                // ((FotterVH) holder).itemView.findViewById(R.id.davam_et_footer);
+                ((FotterVH) holder).button.setOnClickListener(v -> {
+                    if (nextButtonListener != null)
+                        nextButtonListener.onClick(v);
+                });
                 break;
 
         }

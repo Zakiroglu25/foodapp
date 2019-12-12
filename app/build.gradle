@@ -52,6 +52,8 @@ dependencies {
 
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.github.arman-sar:SwipeLayout:1.1.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
 
     implementation 'com.baoyz.swipemenulistview:library:1.3.0'
 }

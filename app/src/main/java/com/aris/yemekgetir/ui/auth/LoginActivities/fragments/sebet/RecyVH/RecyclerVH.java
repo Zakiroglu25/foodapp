@@ -2,7 +2,6 @@ package com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.RecyVH;
 
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,7 +12,6 @@ import com.aris.yemekgetir.ui.auth.LoginActivities.adapter.model.Header;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.BaseRecyclerVH;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.adapter.HeaderAdapter;
 import com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.adapter.ShablonAdapter;
-
 import java.util.List;
 
 public class RecyclerVH extends BaseRecyclerVH {

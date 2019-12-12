@@ -74,19 +74,13 @@ public class AxtarishFragment extends BaseFragment {
 
         AxtarishAdapter axtarishAdapter = new AxtarishAdapter();
 
-
         axtarishAdapter.setListener((s)->{
             startActivity(new Intent(getContext(), AxtarishYemek.class));
             return false;
         });
 
-
-
         recyclerView.addItemDecoration(new RecyclerSpaceDec(16));
-
         recyclerView.setAdapter(axtarishAdapter);
-
-
         axtarishAdapter.setData(objectList);
 
     }

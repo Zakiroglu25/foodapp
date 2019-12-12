@@ -7,13 +7,14 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/davam_et_footer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
         android:background="@drawable/btn_regster"
         android:text="Davam et"
+        android:onClick="onClick"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="19sp"
@@ -27,13 +28,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="28dp"
         android:fontFamily="@font/geogtq_md"
         android:text="Yemək priboru"
         android:textColor="#240D44"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/send_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView61"
@@ -47,6 +49,7 @@
         android:textAlignment="center"
         android:textColor="#240D44"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/send_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

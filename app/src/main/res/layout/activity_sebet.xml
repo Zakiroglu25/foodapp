@@ -4,8 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/add_menu_bck"
-    tools:context=".ui.auth.LoginActivities.activities.AddMenuRestaurant">
+    tools:context=".ui.auth.LoginActivities.activities.drawermenu.SebetActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Sebet" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.SebetFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        class="com.aris.yemekgetir.ui.auth.LoginActivities.fragments.sebet.SebetFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout7" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
